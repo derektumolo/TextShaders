@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="blotter.min.js"></script>
+    <script src="slidingDoorMaterial.js"></script>
+  </head>
+  <body>
+    <script>
+      var text = new Blotter.Text("REFORM", {
+        family : "serif",
+        size : 120,
+        fill : "#171717"
+      });
+
+      var material = new Blotter.SlidingDoorMaterial();
+      var blotter = new Blotter(material, { texts : text });
+      var scope = blotter.forText(text);
+      scope.appendTo(document.body);
+
+    </script>
+  </body>
+</html>
