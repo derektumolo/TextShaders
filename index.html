@@ -3,6 +3,11 @@
   <head>
     <script src="blotter.min.js"></script>
     <script src="slidingDoorMaterial.js"></script>
+    <script src="liquidDistortionMaterial.js"></script>
+    <script src="rollingDistortMaterial.js"></script>
+    <script src="channelSplitMaterial.js"></script>
+    <script src="fliesMaterial.js"></script>
+    <script src="sliceEcho.js"></script>
   </head>
   <body>
     <script>
@@ -12,11 +17,10 @@
         fill : "#171717"
       });
 
-      var material = new Blotter.SlidingDoorMaterial();
+      var material = new Blotter.FliesMaterial();
       var blotter = new Blotter(material, { texts : text });
       var scope = blotter.forText(text);
       scope.appendTo(document.body);
-
     </script>
   </body>
 </html>

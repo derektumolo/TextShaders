@@ -119,12 +119,12 @@
       init : function () {
         this.mainImage = _mainImageSrc();
         this.uniforms = {
-          uPointCellWidth : { type : "1f", value : 0.04 },
-          uPointRadius : { type : "1f", value : 0.75 },
+          uPointCellWidth : { type : "1f", value : 0.02 },
+          uPointRadius : { type : "1f", value : 0.4 },
           uDodge : { type : "1f", value : 0.0 },
           uDodgePosition : { type : "2f", value : [0.5, 0.5] },
           uDodgeSpread : { type : "1f", value : 0.25 },
-          uSpeed : { type : "1f", value : 1.0 }
+          uSpeed : { type : "1f", value : 2.0 }
         };
       }
     };
